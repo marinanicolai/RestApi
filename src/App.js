@@ -3,6 +3,7 @@ import "./App.css";
 import List from "./components/List";
 import withListLoading from "./components/WithListLoading";
 import { PostRequest } from "./components/PostRequest";
+import { PostRequestHooks } from "./components/PostRequestHooks";
 function App() {
   const ListLoading = withListLoading(List);
   const [appState, setAppState] = useState({
@@ -30,6 +31,7 @@ function App() {
       <div>
         <h3 className="p-3 text-center">React HTTP POST Requests with Fetch</h3>
         <PostRequest />
+        <PostRequestHooks />
       </div>
       <footer>
         <div className="footer">
