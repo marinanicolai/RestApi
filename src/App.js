@@ -4,6 +4,7 @@ import List from "./components/List";
 import withListLoading from "./components/WithListLoading";
 import { PostRequest } from "./components/PostRequest";
 import { PostRequestHooks } from "./components/PostRequestHooks";
+import { PostRequestErrorHandling } from "./components/PostRequestErrorHandling";
 function App() {
   const ListLoading = withListLoading(List);
   const [appState, setAppState] = useState({
@@ -32,6 +33,7 @@ function App() {
         <h3 className="p-3 text-center">React HTTP POST Requests with Fetch</h3>
         <PostRequest />
         <PostRequestHooks />
+        <PostRequestErrorHandling />
       </div>
       <footer>
         <div className="footer">
