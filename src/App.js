@@ -5,6 +5,7 @@ import withListLoading from "./components/WithListLoading";
 import { PostRequest } from "./components/PostRequest";
 import { PostRequestHooks } from "./components/PostRequestHooks";
 import { PostRequestErrorHandling } from "./components/PostRequestErrorHandling";
+import { PostRequestSetHeaders } from "./components/PostRequestSetHeaders";
 function App() {
   const ListLoading = withListLoading(List);
   const [appState, setAppState] = useState({
@@ -34,6 +35,7 @@ function App() {
         <PostRequest />
         <PostRequestHooks />
         <PostRequestErrorHandling />
+        <PostRequestSetHeaders />
       </div>
       <footer>
         <div className="footer">
